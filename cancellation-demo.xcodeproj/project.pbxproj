@@ -19,6 +19,7 @@
 		649FAD7B2BF164EB0008CDA1 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649FAD7A2BF164EB0008CDA1 /* MovieList.swift */; };
 		649FAD7F2BF166630008CDA1 /* PopularListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649FAD7E2BF166630008CDA1 /* PopularListViewModel.swift */; };
 		649FAD812BF166670008CDA1 /* PopularListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649FAD802BF166670008CDA1 /* PopularListView.swift */; };
+		649FAD8C2BF18C5C0008CDA1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649FAD8B2BF18C5C0008CDA1 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		649FAD7A2BF164EB0008CDA1 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		649FAD7E2BF166630008CDA1 /* PopularListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListViewModel.swift; sourceTree = "<group>"; };
 		649FAD802BF166670008CDA1 /* PopularListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularListView.swift; sourceTree = "<group>"; };
+		649FAD8B2BF18C5C0008CDA1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +135,8 @@
 		649FAD662BF15E6D0008CDA1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				649FAD7D2BF166140008CDA1 /* Details */,
 				649FAD7C2BF165EA0008CDA1 /* PopularList */,
+				649FAD8B2BF18C5C0008CDA1 /* RootView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -181,13 +183,6 @@
 				649FAD7E2BF166630008CDA1 /* PopularListViewModel.swift */,
 			);
 			path = PopularList;
-			sourceTree = "<group>";
-		};
-		649FAD7D2BF166140008CDA1 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +325,7 @@
 				649FAD3C2BF15DF10008CDA1 /* CancellationApp.swift in Sources */,
 				649FAD792BF164DC0008CDA1 /* Movie.swift in Sources */,
 				649FAD812BF166670008CDA1 /* PopularListView.swift in Sources */,
+				649FAD8C2BF18C5C0008CDA1 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

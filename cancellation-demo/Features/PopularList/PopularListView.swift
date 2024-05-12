@@ -38,6 +38,9 @@ struct PopularListView: View {
     .onAppear {
       viewModel.apply(.viewAppeared)
     }
+    .onDisappear {
+      viewModel.apply(.viewDissapeared)
+    }
   }
 }
 

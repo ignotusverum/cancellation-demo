@@ -12,6 +12,7 @@ class PopularListViewModel: ObservableObject {
   enum ViewAction {
     case reload
     case viewAppeared
+    case viewDissapeared
     case scrolledToPage(Int)
     case loadDetails(movieID: Int)
     case stopLoading(movieID: Int)
@@ -77,7 +78,7 @@ class PopularListViewModel: ObservableObject {
       movieList[updateIndex] = movie
       
       return .viewData(movieList)
-      
+            
     default: return state
     }
   }
@@ -112,6 +113,11 @@ class PopularListViewModel: ObservableObject {
       
     case let .stopLoading(movieID):
       stopLoadingDetails(movieID: movieID)
+      
+    case .viewDissapeared:
+      fetchMovieDetailsTask.forEach { _, task in
+        task.cancel()
+      }
       
     default:
       break

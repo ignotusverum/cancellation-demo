@@ -18,7 +18,6 @@ extension APIService {
     let request = configureURLRequest(for: requestConfig)
     
     let (data, response) = try await URLSession.shared.data(for: request)
-    print("DEBUG - \(response)")
     guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw ApiErrorType.serverError }
     return data
   }
