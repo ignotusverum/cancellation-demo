@@ -70,7 +70,7 @@ class PopularListViewModel: ObservableObject {
       guard
         case var .viewData(movieList) = state,
         let updateIndex = movieList.firstIndex(where: { $0.id == movieID }),
-        movieList[updateIndex].loadingState != .loaded && movieList[updateIndex].loadingState != .cancelled
+        movieList[updateIndex].loadingState == .idle
       else { return state }
       
       var movie = movieList[updateIndex]
@@ -106,7 +106,7 @@ class PopularListViewModel: ObservableObject {
       guard
         case let .viewData(movieList) = state,
         let updateIndex = movieList.firstIndex(where: { $0.id == movieID }),
-        movieList[updateIndex].loadingState != .loaded && movieList[updateIndex].loadingState != .cancelled
+        movieList[updateIndex].loadingState == .idle
       else { return }
       
       loadMovieDetails(movieID: movieID)
